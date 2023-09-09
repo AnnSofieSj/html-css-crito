@@ -1,0 +1,17 @@
+header {
+  background-color: #F0EFE9;
+  padding: 16px;
+}
+header .container {
+  display: flex;
+}
+@media (min-width: 1600px) {
+  header .container {
+    max-width: 1520px;
+  }
+}
+@media (min-width: 2500px) {
+  header .container {
+    max-width: 2048px;
+  }
+}
