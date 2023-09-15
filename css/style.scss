@@ -13,7 +13,7 @@ html, body{
     border: 1px solid #f9d783;
     color: #191919;
     text-decoration: none;
-    padding: 15px 25px;
+    padding: 12px 15px;
     font-weight: 600;
     border-radius: 25px;
     
@@ -35,7 +35,7 @@ html, body{
     border: 1px solid #191919;
     color: #191919;
     text-decoration: none;
-    padding: 15px 25px;
+    padding: 12px 15px;
     font-weight: 600;
     border-radius: 25px;
     
@@ -48,6 +48,26 @@ html, body{
         background-color: #191919;
         border: 1px solid #191919;
         color: #F0EFE9;
+    }
+
+}
+
+.section-title{
+
+    padding-top: 120px;
+    padding-bottom: 90px;
+
+    p{
+        color: #F94D1C;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    h2{
+        color: #191919;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 700;
+        font-size: 45px;
     }
 
 }
@@ -83,7 +103,7 @@ header {
                 align-items: center;
                 justify-content: flex-end;               
                 border-bottom: 1px solid #dad9d3;
-                padding-bottom: 0.9rem;
+                padding-bottom: 5px;
 
                 @media (min-width:1200px){                
                     justify-content: space-between; 
@@ -136,7 +156,7 @@ header {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                padding-top: 0.8rem;              //eller margin??
+                padding-top: 2px;              //eller margin??
                 
                     nav{
                         a{
@@ -166,8 +186,9 @@ header {
                         }
                     }
                     .btn-login{
-                        padding-top: 10px;
-                        padding-bottom: 10px;
+                        padding-top: 8px;
+                        padding-bottom: 8px;
+                        margin-top: 5px;
                     }
                 }
         }        
@@ -262,4 +283,53 @@ header {
         }
     }
 
+}
+
+.project{
+
+    .container{
+        
+        .section-title{
+            text-align: center;
+        }
+
+    }
+}
+
+.showcase-contact{
+    background-color:#F0EFE9;
+    
+    .container{            
+        text-align: center;
+        padding: 100px;
+
+        .orientation{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+
+            .home{
+                font-size: 16px;
+                font-weight: 300;
+            }
+
+            .contact{
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+
+        }
+
+        h1{
+            font-family: 'DM Sans';
+            font-size: 29px;
+            font-weight: 700;
+
+            @media (min-width: 768px){
+                font-size: 56px;
+            }
+
+        }
+    }
 }

@@ -12,7 +12,7 @@ html, body {
   border: 1px solid #f9d783;
   color: #191919;
   text-decoration: none;
-  padding: 15px 25px;
+  padding: 12px 15px;
   font-weight: 600;
   border-radius: 25px;
 }
@@ -31,7 +31,7 @@ html, body {
   border: 1px solid #191919;
   color: #191919;
   text-decoration: none;
-  padding: 15px 25px;
+  padding: 12px 15px;
   font-weight: 600;
   border-radius: 25px;
 }
@@ -43,6 +43,22 @@ html, body {
   background-color: #191919;
   border: 1px solid #191919;
   color: #F0EFE9;
+}
+
+.section-title {
+  padding-top: 120px;
+  padding-bottom: 90px;
+}
+.section-title p {
+  color: #F94D1C;
+  font-size: 18px;
+  font-weight: 500;
+}
+.section-title h2 {
+  color: #191919;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
 }
 
 header {
@@ -77,7 +93,7 @@ header .container .menu .contact-menu {
   align-items: center;
   justify-content: flex-end;
   border-bottom: 1px solid #dad9d3;
-  padding-bottom: 0.9rem;
+  padding-bottom: 5px;
 }
 @media (min-width: 1200px) {
   header .container .menu .contact-menu {
@@ -121,7 +137,7 @@ header .container .menu .main-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 0.8rem;
+  padding-top: 2px;
 }
 header .container .menu .main-menu nav a {
   display: inline-block;
@@ -144,8 +160,9 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   transform: translate(calc(50% - 15px));
 }
 header .container .menu .main-menu .btn-login {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: 5px;
 }
 
 .showcase {
@@ -213,5 +230,40 @@ header .container .menu .main-menu .btn-login {
 @media (min-width: 1200px) {
   .showcase .container img {
     display: block;
+  }
+}
+
+.project .container .section-title {
+  text-align: center;
+}
+
+.showcase-contact {
+  background-color: #F0EFE9;
+}
+.showcase-contact .container {
+  text-align: center;
+  padding: 100px;
+}
+.showcase-contact .container .orientation {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.showcase-contact .container .orientation .home {
+  font-size: 16px;
+  font-weight: 300;
+}
+.showcase-contact .container .orientation .contact {
+  font-size: 16px;
+  font-weight: 500;
+}
+.showcase-contact .container h1 {
+  font-family: "DM Sans";
+  font-size: 29px;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .showcase-contact .container h1 {
+    font-size: 56px;
   }
 }
