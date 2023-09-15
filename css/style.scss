@@ -52,10 +52,42 @@ html, body{
 
 }
 
+.btn-black{
+    background-color: #191919;
+    border: 1px solid #191919;
+    color: #F0EFE9;
+    text-decoration: none;
+    padding: 12px 15px;
+    font-weight: 600;
+    border-radius: 25px;
+    
+    i{
+        margin-left: 6px;
+        font-size: 0.8em;
+    }
+
+    &:hover{
+        background-color: #ffffff;
+        border: 1px solid #191919;
+        color: #191919;
+    }
+
+}
+
+.center-objects{
+    display: flex;
+    justify-content: center;
+}
+
 .section-title{
 
-    padding-top: 120px;
-    padding-bottom: 90px;
+    padding-top: 60px;
+    padding-bottom: 35px;
+
+    @media (min-width: 768px){
+        padding-top: 120px;
+        padding-bottom: 90px;
+    }
 
     p{
         color: #F94D1C;
@@ -291,6 +323,61 @@ header {
         
         .section-title{
             text-align: center;
+        }
+
+        .project-articles{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+
+            @media (min-width: 768px){
+                grid-template-columns: 1fr 1fr;
+            }
+
+
+            article{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto 1fr auto;
+
+                img{
+                    width: 100%;
+                    height: auto;
+
+                }
+
+                h3{
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 700;
+                    font-size: 16px;
+                    padding-top: 35px;
+                    padding-bottom: 16px;
+                    border-bottom: 1px solid #dad9d3;
+
+                }
+
+                a{
+                    padding: 10px;
+                    display: block;
+                    text-align: right;
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #191919;
+                    text-decoration: none;
+                    
+                    
+                    i{
+                        margin-left: 5px;
+                    }
+
+
+
+                }
+            }
+        }
+
+        .center-objects{
+            padding: 35px;
         }
 
     }

@@ -45,9 +45,39 @@ html, body {
   color: #F0EFE9;
 }
 
+.btn-black {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #F0EFE9;
+  text-decoration: none;
+  padding: 12px 15px;
+  font-weight: 600;
+  border-radius: 25px;
+}
+.btn-black i {
+  margin-left: 6px;
+  font-size: 0.8em;
+}
+.btn-black:hover {
+  background-color: #ffffff;
+  border: 1px solid #191919;
+  color: #191919;
+}
+
+.center-objects {
+  display: flex;
+  justify-content: center;
+}
+
 .section-title {
-  padding-top: 120px;
-  padding-bottom: 90px;
+  padding-top: 60px;
+  padding-bottom: 35px;
+}
+@media (min-width: 768px) {
+  .section-title {
+    padding-top: 120px;
+    padding-bottom: 90px;
+  }
 }
 .section-title p {
   color: #F94D1C;
@@ -235,6 +265,48 @@ header .container .menu .main-menu .btn-login {
 
 .project .container .section-title {
   text-align: center;
+}
+.project .container .project-articles {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+@media (min-width: 768px) {
+  .project .container .project-articles {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.project .container .project-articles article {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+.project .container .project-articles article img {
+  width: 100%;
+  height: auto;
+}
+.project .container .project-articles article h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  padding-top: 35px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #dad9d3;
+}
+.project .container .project-articles article a {
+  padding: 10px;
+  display: block;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 500;
+  color: #191919;
+  text-decoration: none;
+}
+.project .container .project-articles article a i {
+  margin-left: 5px;
+}
+.project .container .center-objects {
+  padding: 35px;
 }
 
 .showcase-contact {
