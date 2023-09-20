@@ -263,6 +263,42 @@ header .container .menu .main-menu .btn-login {
   }
 }
 
+.sponsors .container {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  justify-items: center;
+}
+@media (min-width: 768px) {
+  .sponsors .container {
+    padding-top: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .sponsors .container {
+    padding-top: 100px;
+  }
+}
+
+.features .container {
+  display: grid;
+  grid-template-columns: 1.2fr 1.5fr;
+}
+.features .container .section-title {
+  padding: 60px;
+}
+.features .container .content-boxes {
+  padding: 120px 120px 10px 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+}
+.features .container .content-boxes h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+
 .project .container .section-title {
   text-align: center;
 }
