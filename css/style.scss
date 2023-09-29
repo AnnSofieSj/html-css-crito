@@ -937,6 +937,134 @@ header {
     }
 }
 
+// team section
+.team{
+    background-color: #edcf86;
+
+    .container{
+        .section-top{
+            text-align: center;
+
+            @media (min-width: 1000px){
+                display: flex;  
+                justify-content: space-between;
+                align-items: center;
+                text-align: left;
+            }
+
+            .section-title{               
+                padding-bottom: 20px;
+
+                @media (min-width: 1000px){
+                    padding-bottom: 120px;
+                }
+            }
+            .btn-yellow{               
+                border: 1px solid #191919;
+                padding-left: 30px;
+                padding-right: 30px;               
+                margin-bottom: 40px;
+                display: inline-block;             
+                                          
+            }
+        }
+        .team-members{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+
+            @media (min-width: 768px){
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+
+            .member{
+                img{
+                    width: 100%;
+                    height: auto;
+                    padding-bottom: 15px;
+                }
+
+            }
+        }
+        .dots{
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+            padding-bottom: 80px;
+            
+
+            i{
+                margin: 5px;
+                
+            }        
+           
+        }
+    }
+}
+
+// testimonial section
+.testimonial{
+    background-color:#edcf86;
+    padding-bottom: 120px;
+
+    .container{        
+        background-color: #ffffff;
+        padding-bottom: 120px;
+
+        @media (min-width: 1400px){
+            max-width: 1520px;
+                      
+        }       
+
+        .section-title{
+            text-align: center;
+        }
+
+        .users{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 100px;
+            margin-left: 100px;
+            margin-right: 100px;
+
+            .box{
+
+                .stars{
+                    color: #F94D1C;
+                    margin-bottom: 30px;
+                }
+                .user{
+                    display: flex;                    
+                    align-items: center;
+
+                    img{                        
+                        margin-right: 20px;
+                    }
+
+                    .name{
+
+                        h3{
+                            font-family: 'DM Sans', sans-serif;
+                            font-size: 22px;
+                            font-weight: 700;                   
+                        }
+
+                        p{
+                            color: #F94D1C;
+                        }
+                    }
+                }               
+               
+            }
+        }
+        .btn-black{
+            margin-top: 100px;
+            padding-left: 30px;
+            padding-right: 30px;            
+        }
+    }
+}
+
 // news letter section
 
 .news-letter{
@@ -989,6 +1117,11 @@ header {
             }
             .btn-yellow{
                 padding: 12px 30px;
+                margin-top: 10px;
+
+                @media (min-width: 483px){
+                    margin-top: 0px;
+                }
 
             }
         }

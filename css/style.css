@@ -754,6 +754,108 @@ header .container .menu .main-menu .btn-login {
   padding: 35px;
 }
 
+.team {
+  background-color: #edcf86;
+}
+.team .container .section-top {
+  text-align: center;
+}
+@media (min-width: 1000px) {
+  .team .container .section-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+}
+.team .container .section-top .section-title {
+  padding-bottom: 20px;
+}
+@media (min-width: 1000px) {
+  .team .container .section-top .section-title {
+    padding-bottom: 120px;
+  }
+}
+.team .container .section-top .btn-yellow {
+  border: 1px solid #191919;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 40px;
+  display: inline-block;
+}
+.team .container .team-members {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+@media (min-width: 768px) {
+  .team .container .team-members {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+.team .container .team-members .member img {
+  width: 100%;
+  height: auto;
+  padding-bottom: 15px;
+}
+.team .container .dots {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+.team .container .dots i {
+  margin: 5px;
+}
+
+.testimonial {
+  background-color: #edcf86;
+  padding-bottom: 120px;
+}
+.testimonial .container {
+  background-color: #ffffff;
+  padding-bottom: 120px;
+}
+@media (min-width: 1400px) {
+  .testimonial .container {
+    max-width: 1520px;
+  }
+}
+.testimonial .container .section-title {
+  text-align: center;
+}
+.testimonial .container .users {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.testimonial .container .users .box .stars {
+  color: #F94D1C;
+  margin-bottom: 30px;
+}
+.testimonial .container .users .box .user {
+  display: flex;
+  align-items: center;
+}
+.testimonial .container .users .box .user img {
+  margin-right: 20px;
+}
+.testimonial .container .users .box .user .name h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+.testimonial .container .users .box .user .name p {
+  color: #F94D1C;
+}
+.testimonial .container .btn-black {
+  margin-top: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .news-letter {
   background-color: #F0EFE9;
   padding-top: 100px;
@@ -798,6 +900,12 @@ header .container .menu .main-menu .btn-login {
 }
 .news-letter .container form .btn-yellow {
   padding: 12px 30px;
+  margin-top: 10px;
+}
+@media (min-width: 483px) {
+  .news-letter .container form .btn-yellow {
+    margin-top: 0px;
+  }
 }
 
 .showcase-contact {
