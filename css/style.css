@@ -15,6 +15,8 @@ html, body {
   padding: 12px 15px;
   font-weight: 600;
   border-radius: 25px;
+  transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  box-shadow: 2px 2px 8px 1px rgba(72, 64, 42, 0.4392156863);
 }
 .btn-yellow i {
   margin-left: 6px;
@@ -24,6 +26,7 @@ html, body {
   background-color: #191919;
   border: 1px solid #191919;
   color: #F0EFE9;
+  box-shadow: 1px 1px 3px 1px rgba(72, 64, 42, 0.7843137255);
 }
 
 .btn-transparent {
@@ -34,6 +37,8 @@ html, body {
   padding: 12px 15px;
   font-weight: 600;
   border-radius: 25px;
+  transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  box-shadow: 2px 2px 8px 1px rgba(72, 72, 69, 0.4431372549);
 }
 .btn-transparent i {
   margin-left: 6px;
@@ -43,6 +48,7 @@ html, body {
   background-color: #191919;
   border: 1px solid #191919;
   color: #F0EFE9;
+  box-shadow: 1px 1px 3px 1px rgba(72, 64, 42, 0.7843137255);
 }
 
 .btn-black {
@@ -215,6 +221,15 @@ header .container .menu .main-menu .btn-login {
 
 .showcase {
   background-color: #F0EFE9;
+  position: relative;
+  z-index: 0;
+}
+.showcase .backgroundlines {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 45dvw;
 }
 .showcase .container {
   display: flex;
@@ -372,11 +387,18 @@ header .container .menu .main-menu .btn-login {
 }
 .about .container .content-left {
   position: relative;
+  z-index: 0;
 }
 @media (min-width: 1200px) {
   .about .container .content-left {
     padding: 50px;
   }
+}
+.about .container .content-left .waves-about {
+  position: absolute;
+  top: 85px;
+  left: 15px;
+  z-index: 1;
 }
 .about .container .content-left img {
   display: none;
@@ -392,9 +414,10 @@ header .container .menu .main-menu .btn-login {
   padding: 30px 30px 50px 20px;
   width: 370px;
   height: auto;
-  position: relative;
-  bottom: 230px;
-  right: 55px;
+  position: absolute;
+  bottom: 90px;
+  left: 0;
+  z-index: 1;
   box-shadow: -15px 1px 18px #e9eaeb;
 }
 @media (min-width: 1200px) {
@@ -499,6 +522,14 @@ header .container .menu .main-menu .btn-login {
 .services {
   background-color: #F0EFE9;
   padding-bottom: 150px;
+  position: relative;
+  z-index: 0;
+}
+.services .waves-services {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }
 .services .container .section-title {
   text-align: center;
@@ -975,6 +1006,24 @@ header .container .menu .main-menu .btn-login {
 
 footer {
   background-color: #0E1021;
+  position: relative;
+  z-index: 0;
+}
+footer .waves-footer {
+  position: absolute;
+  right: 0;
+  bottom: 155px;
+  z-index: -1;
+}
+@media (min-width: 484px) {
+  footer .waves-footer {
+    bottom: 130px;
+  }
+}
+@media (min-width: 768px) {
+  footer .waves-footer {
+    bottom: 100px;
+  }
 }
 footer .container {
   padding-top: 110px;
@@ -1062,6 +1111,15 @@ footer .container .footer-bottom .socialmedia a:hover {
 
 .showcase-contact {
   background-color: #F0EFE9;
+  position: relative;
+  z-index: 0;
+}
+.showcase-contact .backgroundlines {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 45dvw;
 }
 .showcase-contact .container {
   text-align: center;
